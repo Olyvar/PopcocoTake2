@@ -1,0 +1,44 @@
+/* @license
+ * MyFonts Webfont Build ID 2484644, 2013-02-19T19:53:40-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Trend Sans One Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/trend/sans-one-italic/
+ * 
+ * Webfont: Trend Sans One by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/trend/sans-one/
+ * 
+ * Webfont: Trend Slab Four Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/trend/slab-four-italic/
+ * 
+ * Webfont: Trend Slab Four by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/trend/slab-four/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2484644
+ * Webfonts copyright: Copyright (c) 2012 by Daniel Hernandez &amp; Paula nazal. All rights reserved.
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/25e9a4");
+
+  
+@font-face {font-family: 'TrendSansOne-Italic';src: url('webfonts/25E9A4_0_0.eot');src: url('webfonts/25E9A4_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/25E9A4_0_0.woff') format('woff'),url('webfonts/25E9A4_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'TrendSansOne';src: url('webfonts/25E9A4_1_0.eot');src: url('webfonts/25E9A4_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/25E9A4_1_0.woff') format('woff'),url('webfonts/25E9A4_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'TrendSlabFour-Italic';src: url('webfonts/25E9A4_2_0.eot');src: url('webfonts/25E9A4_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/25E9A4_2_0.woff') format('woff'),url('webfonts/25E9A4_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'TrendSlabFour';src: url('webfonts/25E9A4_3_0.eot');src: url('webfonts/25E9A4_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/25E9A4_3_0.woff') format('woff'),url('webfonts/25E9A4_3_0.ttf') format('truetype');}
+ 

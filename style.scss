@@ -1,0 +1,440 @@
+/*
+Theme Name: 	Popcoco
+Theme URI: 		http://www.popco.co
+Description: 	My first theme. Here goes!
+Version: 		1.0
+Author: 		Oliver Banham
+Author URI: 	http://www.oliverbanham.com
+*/
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Media queries 
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+@import "css/reset.css";
+
+div,
+article,
+section,
+header,
+nav,
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
+::-moz-selection 	{ background:#ff0; color:#333; }
+::selection 		{ background:#ff0; color:#333; }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+html 			{ font-size: 0.625em; /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* 400 and up */
+@media screen and (min-width:400px) {
+
+
+}
+
+
+/* COLOR SCHEME */
+
+/* DARKGRAY = #3E4147 */
+/* HEAVYCREAM = #FFFEDF */
+/* GOLDIE = #DFBA69 */
+/* CLARET = #5A2E2E */
+/* NOTQUITEBLACK = #2A2C31 */
+
+$DARKGRAY: #3E4147;
+$HEAVYCREAM: #FFFEDF;
+$GOLDIE: #DFBA69;
+$CLARET: #5A2E2E;
+$NOTQUITEBLACK: #2A2C31;
+
+
+.floatRight {
+	float: right;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+/* ---------- THE GOOD STUFF -------- */
+
+
+
+/* ---------- TYPOGRAPHY --------- */
+
+body {
+	font-size: 1.4em;
+}
+
+p {
+	color: $DARKGRAY;
+	font-size: 1.4em;
+	margin: 1em 0;
+}
+
+p.tags{
+	margin-top: 20px;
+	font-size: 1.2em;
+}
+
+p.category{
+	margin: 0.5em 0 1em 0;
+}
+
+h1 {
+	color: $GOLDIE;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.6) ,0px -1px 0px rgba(255,255,255,0.9);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#99000000,Positive=true)
+		progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=-1,Color=#e6ffffff,Positive=true)";zoom:1;
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#99000000,Positive=true)
+		progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=-1,Color=#e6ffffff,Positive=true);
+	font:{
+			family: 'TrendSansOne';
+			size: 3.4em;
+			weight: 300;
+		}
+		a{
+			text-decoration:none;
+			color: $GOLDIE;
+		}
+}
+
+h2 {
+	color: $GOLDIE;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.6) ,0px -1px 0px rgba(255,255,255,0.9);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#99000000,Positive=true)
+		progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=-1,Color=#e6ffffff,Positive=true)";zoom:1;
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#99000000,Positive=true)
+		progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=-1,Color=#e6ffffff,Positive=true);
+	font:{
+			family: 'TrendSansOne';
+			size: 2.4em;
+			weight: 300;
+		}
+	text-transform: uppercase;
+	margin:{
+		bottom: 25px;
+	}
+}
+
+
+aside {
+	margin:{
+		top: 10px;
+	}
+	text-transform: uppercase;
+	font-family:"Trend Sans One";
+
+	font-size:1.8em;
+	color: $NOTQUITEBLACK;
+	text-align:left;
+	/* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	text-shadow:0px 1px 0px rgba(255,255,255,0.4) ,0px -1px 0px rgba(0,0,0,0.9);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#66ffffff,Positive=true)
+		progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=-1,Color=#e6000000,Positive=true)";zoom:1;
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#66ffffff,Positive=true)
+		progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=-1,Color=#e6000000,Positive=true);
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------- HEADER -------------------------------------------*/
+
+.headerBand {
+	background: url(images/stripesPattern.png) repeat;
+	padding:{
+		bottom: 40px;
+	}
+}
+
+.headerWrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.logo {
+	margin-top: 20px;
+}
+
+.infoBox {
+	background: url(images/triangleleftimg.png) no-repeat top left black;
+	border: $GOLDIE solid 1px;
+	padding: 0 8px 0 11px;
+	width: 250px;
+	margin-top: 20px;
+	p {
+		color: $GOLDIE;
+		font-size: 1.2em;
+		line-height: 1.4em;
+	}
+}
+
+.wideBar {
+	width: 100%;
+	margin:{
+		top: 80px;
+	}
+	border:{
+		top: 1px;
+		bottom: 1px;
+		style: solid;
+		color: $HEAVYCREAM;
+	}
+	background: {
+		color: black;
+	}
+}
+
+.mainNav {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 10px 20px 10px;
+
+	ul {}
+
+	li { 
+		display: inline;
+		font:{
+			family: 'TrendSlabFour';
+			size: 2.4em;
+			weight: normal;
+		}
+		padding:{
+			left: 5px;
+			right: 5px;
+		}
+		a { color: $GOLDIE;
+		text-decoration: none; }
+	}
+}
+
+
+
+/*----------------------------------------MAIN CONTAINER STRUCTURE-------------------------------------*/
+
+.mainContainer {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.mainContent {
+	width: 610px;
+	float: left;
+}
+
+.blogBox {
+	margin-top: 50px;
+    	padding:{
+		left:40px;
+		right:10px;
+		top: 30px;
+	}
+    position: relative;
+    background: url(images/triangleTopLeft-01.svg) top left no-repeat;
+    background-size: 50px;
+
+	&:before{    
+	border:{
+	top:30px solid rgba(90,46,46,0.2);
+	}
+    content: "";
+    position: absolute;
+    top: 0;
+  
+    left: 0;
+    right: -10px;}
+}
+
+
+
+
+
+
+
+/*-------------------------------SIDEBAR--------------------------*/
+
+.sidebar {
+	float: right;
+	width: 270px;
+}
+
+li.sidebarBox {
+		margin:{
+		top:50px;
+	}
+	padding:{
+		top: 30px;
+		left: 20px;
+		right: 10px;
+	}
+	position: relative;
+    background: url(images/triangleTopLeft-01.svg) top left no-repeat;
+    background-size: 25px;
+
+	&:before{    
+	border:{
+	top:15px solid rgba(90,46,46,0.2);
+	}
+    content: "";
+    position: absolute;
+    top: 0;
+  
+    left: 0;
+    right: -10px;}
+    a{
+    	color: $CLARET;
+    	  border-bottom: 1px solid transparent;
+		  -webkit-transition: border-bottom 0.5s;
+		  -moz-transition: border-bottom 0.5s;
+		  transition: border-bottom 0.5s;
+		  text-decoration: none;
+		  font-weight: bold;
+    	&:visited{color: $CLARET;}
+    	&:hover{text-decoration: none; border-bottom: 1px solid $CLARET;}
+    	&:active{}
+    }
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------LINKS ---------------------------------------*/
+
+@mixin claretlink {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: border-bottom 0.5s;
+  -moz-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
+  color: $CLARET;
+  &:visited { color: $CLARET; }
+  &:hover { text-decoration: none; border-bottom: 3px solid $CLARET;}
+  &:active {}
+}
+
+a.goldLinks {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.5s;
+  -moz-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
+  color: $GOLDIE;
+  &:visited { color: $GOLDIE; }
+  &:hover { text-decoration: none; border-bottom: 2px solid $GOLDIE;}
+  &:active {}
+}
+
+.claretLinks a {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: border-bottom 0.5s;
+  -moz-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
+  color: $CLARET;
+  &:visited { color: $CLARET; }
+  &:hover { text-decoration: none; border-bottom: 3px solid $CLARET;}
+  &:active {}
+}
+
+a .claretLinks{
+	@include claretlink
+}
+
+a.grayLinks {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.5s;
+  -moz-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
+  color: $DARKGRAY;
+  &:visited { color: $DARKGRAY; }
+  &:hover { text-decoration: none; border-bottom: 2px solid $DARKGRAY;}
+  &:active {}
+}
+
+/* --------------------------------------------- FOOTER ---------------------------------------*/
+
+.footerBar {
+	clear: both;
+	width: 100%;
+	height: 15px;
+	border:{
+		top: 4px;
+		style: solid;
+		color: $GOLDIE;
+	}
+	background:{
+		color: $DARKGRAY;
+	}
+}
+
+.footer {
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* --------------------------------------------- MISC ---------------------------------------*/
+
+.goldenHR{
+	width: 100px;
+	color: $GOLDIE;
+	background-color: $GOLDIE;
+	height: 1px;
+}
+
+label.screen-reader-text {
+display: none;
+}
